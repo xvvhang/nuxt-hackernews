@@ -1,12 +1,9 @@
 import { get, child } from 'firebase/database'
 import { getItemData } from '../item/[id]';
 
-const Types = ['new', 'top', 'best', 'ask', 'show', 'job']
-
-const getListData = async (type: string) => {
-  if (!Types.includes(type)) return;
+const getListData = async (list: string) => {
   try {
-    const snapshot = await get(child(hndb, `v0/${type}stories`))
+    const snapshot = await get(child(hndb, `v0/${list}stories`))
     if (!snapshot.exists()) console.log('No data avaible')
     const items = snapshot.val()
     const data = await Promise.all(items.map(async (id: string) => {
@@ -19,12 +16,8 @@ const getListData = async (type: string) => {
 }
 
 export default defineEventHandler(async (event) => {
-  try {
-    const type = getRouterParam(event, 'type')
-    if (!type) return
-    const data = await getListData(type)
-    return data
-  } catch (error) {
-    console.error(error)
-  }
+  const list = getRouterParam(event, 'type')
+  if (!list) return
+  const data = await getListData(list)
+  return data
 })

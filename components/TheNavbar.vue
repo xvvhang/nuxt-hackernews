@@ -16,13 +16,12 @@
 
 <script setup>
 const NavItems = [
-  { link: '/newest', name: 'new' },
-  { link: '/front', name: 'past' },
-  { link: '/newcomments', name: 'comments' },
+  { link: '/new', name: 'new' },
+  { link: '/top', name: 'top' },
+  { link: '/best', name: 'best' },
   { link: '/ask', name: 'ask' },
   { link: '/show', name: 'show' },
-  { link: '/jobs', name: 'jobs' },
-  { link: '/submit', name: 'submit' },
+  { link: '/job', name: 'jobs' },
 ]
 
 const isLogin = false

@@ -16,7 +16,10 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@nuxt/content": "^2.10.0",
     "@pinia/nuxt": "^0.5.1",
+    "dayjs": "^1.11.10",
+    "firebase": "^10.7.1",
     "pinia": "^2.1.7"
   }
 }
