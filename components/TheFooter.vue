@@ -12,7 +12,7 @@
   </footer>
 </template>
 
-<script setup>
+<script setup lang="ts">
 const NavItems = [
   { link: '/newsguidelines', name: 'Guidelines' },
   { link: '/newsfaq', name: 'FAQ' },

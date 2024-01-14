@@ -23,7 +23,7 @@
   </Suspense>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { format } from '~~/utils/date.ts'
 
 const route = useRoute()
