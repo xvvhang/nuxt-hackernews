@@ -1,9 +1,5 @@
 # Nuxt Hacker News Clone
 
-A clone of Hacker News built with nuxt and Hacker News official API.
+A Hacker News clone built with nuxt and Hacker News official API deployed on Vercel.
 
-## TODO
-
-- [ ] Post Lists
-- [ ] Post Detail
-- [ ] User Detail
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/xvvhang/nuxt-hackernews-clone)
